@@ -1,0 +1,31 @@
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal {
+    z-index: 1050 !important;
+}
+
+.modal-dialog {
+    margin: 30px auto;
+    z-index: 1060 !important;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.modal.fade .modal-dialog {
+    transform: translate(0, 0) !important;
+}
+
+.modal.show .modal-dialog {
+    transform: none !important;
+}
+
+.modal-open {
+    overflow: hidden;
+    padding-right: 0 !important;
+}

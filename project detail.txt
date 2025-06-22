@@ -1,0 +1,133 @@
+# Hostel Management System Documentation
+
+## Project Overview
+This is a comprehensive Hostel Management System built using PHP and MySQL. The system allows administrators to manage student hostel accommodations, including room allocation, student registration, and fee management.
+
+## Technologies Used
+- **Backend**: PHP
+- **Database**: MySQL
+- **Frontend**: 
+  - HTML5
+  - CSS3
+  - JavaScript
+  - Bootstrap 4.1.0
+  - jQuery 3.3.1
+- **Additional Libraries**:
+  - Chart.js (for data visualization)
+  - DataTables (for table management)
+  - FullCalendar (for calendar functionality)
+  - Morris.js (for charts)
+  - Perfect Scrollbar (for custom scrollbars)
+
+## Project Structure
+```
+HostelManagement-PHP/
+├── admin/           # Admin panel files
+├── assets/          # Static assets (CSS, JS, images)
+├── DATABASE FILE/   # Database schema and data
+├── dist/           # Compiled assets
+├── includes/       # Common PHP includes
+├── scss/           # SCSS source files
+├── student/        # Student portal files
+├── gulpfile.js     # Gulp configuration
+└── package.json    # Project dependencies
+```
+
+## Database Structure
+The system uses the following main tables:
+1. `admin` - Administrator accounts
+2. `adminlog` - Admin login history
+3. `courses` - Available courses
+4. `registration` - Student hostel registrations
+5. `rooms` - Hostel rooms information
+6. `states` - List of states
+7. `userlog` - Student login history
+8. `userregistration` - Student user accounts
+
+## Key Features
+
+### Admin Panel
+- Secure login system
+- Dashboard with statistics
+- Student management
+- Room management
+- Course management
+- Registration management
+- Fee management
+- Reports generation
+
+### Student Portal
+- Student registration
+- Room booking
+- Profile management
+- Fee payment tracking
+- Course selection
+
+### Room Management
+- Room allocation
+- Different room types (1-seater, 2-seater, 3-seater, 4-seater, 5-seater)
+- Room status tracking
+- Fee structure management
+
+### Student Registration
+- Comprehensive student information collection
+- Guardian details
+- Address information
+- Course selection
+- Room preference
+- Duration selection
+- Food status preference
+
+## Security Features
+- Password hashing
+- Session management
+- IP tracking for login attempts
+- Role-based access control
+
+## Development Tools
+- Gulp for task automation
+- SCSS for CSS preprocessing
+- Browser-sync for development
+- Asset minification and optimization
+
+## Installation Requirements
+- PHP 5.6 or higher
+- MySQL 5.6 or higher
+- Web server (Apache/Nginx)
+- Node.js and npm (for development)
+
+## Default Login Credentials
+- Admin Panel:
+  - Username: admin
+  - Email: admin@mail.com
+  - Password: (MD5 hashed)
+
+## Development Setup
+1. Clone the repository
+2. Import the database schema from `DATABASE FILE/hostelmsphp.sql`
+3. Configure database connection in includes/config.php
+4. Install dependencies:
+   ```bash
+   npm install
+   ```
+5. Run development server:
+   ```bash
+   gulp serve
+   ```
+
+## Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Opera (latest)
+
+## Contributing
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
+## License
+This project is licensed under the ISC License. 

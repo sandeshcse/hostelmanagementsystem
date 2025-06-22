@@ -1,0 +1,12 @@
+.sidebar-nav .sidebar-item .sidebar-link.active {
+    background-color: #2962ff;
+    color: #fff !important;
+}
+
+.sidebar-nav .sidebar-item .sidebar-link.active i {
+    color: #fff !important;
+}
+
+.sidebar-nav .sidebar-item .sidebar-link:hover {
+    background-color: rgba(41, 98, 255, 0.1);
+}
